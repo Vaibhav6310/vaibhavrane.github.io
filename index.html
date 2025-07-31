@@ -3,176 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Shyam Rane - Resume</title>
+    <title>Vaibhav Shyam Rane - Interactive Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic CSS for styling - you can expand this significantly */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        h1, h2, h3 {
-            color: #0056b3;
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
         }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
         }
-        .contact-info a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        .section {
-            margin-bottom: 25px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
-        }
-        .section:last-child {
-            border-bottom: none;
-        }
-        .job-title {
-            font-weight: bold;
-            color: #555;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill-item {
-            background-color: #e0eaff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.9em;
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <header class="contact-info">
-            [cite_start]<h1>Vaibhav Shyam Rane</h1> [cite: 1]
-            <p>B305, Om Namah Shivay, Kalash Tower, Karanjade, Panvel - 410206 | +91 89760 47220 / +91 93235 52524 | [cite_start]<a href="mailto:vaibhavrane.online@gmail.com">vaibhavrane.online@gmail.com</a></p> [cite: 2]
-            [cite_start]<p>Date of Birth: 23/10/1995 [cite: 3] | [cite_start]Languages: English, Marathi, Hindi [cite: 4] | [cite_start]Willing to Relocate: Yes [cite: 5]</p>
-        </header>
+<body class="antialiased text-gray-800">
 
-        <section class="section">
-            [cite_start]<h2>Professional Summary</h2> [cite: 6]
-            [cite_start]<p>Results-driven IT Support & Production Engineer with 5+ years of experience across banking, finance, and IT operations. [cite: 7] [cite_start]Proven expertise in Salesforce CRM, application support (L2 & L3), SQL, SOQL, and Azure. [cite: 8] [cite_start]Strong analytical and troubleshooting skills with a commitment to continuous process improvement and stakeholder satisfaction. [cite: 9] [cite_start]Skilled in incident management, root cause analysis, and post-production support. [cite: 10]</p>
-        </section>
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
+        <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <!-- Header Section -->
+            <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 sm:p-8 text-center rounded-t-2xl">
+                <h1 class="text-3xl sm:text-4xl font-bold mb-2">Vaibhav Shyam Rane</h1>
+                <p class="text-sm sm:text-base opacity-90">IT Support, Production Engineer & Salesforce Administrator</p>
+                <div class="mt-4 text-xs sm:text-sm flex flex-wrap justify-center gap-x-4 gap-y-2">
+                    <span>B305, Om Namah Shivay, Kalash Tower, Karanjade, Panvel, Mumbai, India - 410206</span>
+                    <span>+91 89760 47220 / +91 93235 52524</span>
+                    <a href="mailto:vaibhavrane.online@gmail.com" class="hover:underline text-blue-200">vaibhavrane.online@gmail.com</a>
+                    <span>DOB: 23/10/1995</span>
+                    <span>Languages: English, Marathi, Hindi</span>
+                    <span>Willing to Relocate: Yes</span>
+                </div>
+            </header>
 
-        <section class="section">
-            [cite_start]<h2>Technical Skills</h2> [cite: 11]
-            <div class="skills-list">
-                [cite_start]<span class="skill-item">Salesforce.com</span> [cite: 12]
-                [cite_start]<span class="skill-item">Veeva CRM</span> [cite: 12]
-                [cite_start]<span class="skill-item">SQL</span> [cite: 13]
-                [cite_start]<span class="skill-item">SOQL</span> [cite: 13]
-                [cite_start]<span class="skill-item">APEX</span> [cite: 13]
-                [cite_start]<span class="skill-item">Javascript</span> [cite: 13]
-                [cite_start]<span class="skill-item">Python</span> [cite: 13]
-                [cite_start]<span class="skill-item">Microsoft Azure (VMs, AD, Load Balancer, Disk, Storage)</span> [cite: 14]
-                [cite_start]<span class="skill-item">Windows</span> [cite: 15]
-                [cite_start]<span class="skill-item">Linux</span> [cite: 15]
-                [cite_start]<span class="skill-item">macOS</span> [cite: 15]
-                [cite_start]<span class="skill-item">DHCP</span> [cite: 16]
-                [cite_start]<span class="skill-item">DNS</span> [cite: 16]
-                [cite_start]<span class="skill-item">SMTP</span> [cite: 16]
-                [cite_start]<span class="skill-item">POP3</span> [cite: 16]
-                [cite_start]<span class="skill-item">FTP</span> [cite: 16]
-                [cite_start]<span class="skill-item">VPN</span> [cite: 16]
-                [cite_start]<span class="skill-item">Salesforce Inspector</span> [cite: 17]
-                [cite_start]<span class="skill-item">Workbench</span> [cite: 17]
-                [cite_start]<span class="skill-item">MASDB</span> [cite: 17]
-                [cite_start]<span class="skill-item">APP Dynamics</span> [cite: 17]
-                [cite_start]<span class="skill-item">Dynatrace Monitoring System</span> [cite: 17]
-                [cite_start]<span class="skill-item">JIRA</span> [cite: 17]
-                [cite_start]<span class="skill-item">Manage Engine</span> [cite: 18]
-                [cite_start]<span class="skill-item">O365</span> [cite: 19]
-                [cite_start]<span class="skill-item">VMware ESXi</span> [cite: 19]
-                [cite_start]<span class="skill-item">System Virtualization</span> [cite: 19]
-                [cite_start]<span class="skill-item">Active Directory</span> [cite: 19]
-            </div>
-        </section>
+            <main class="p-6 sm:p-8">
+                <!-- Professional Summary -->
+                <section class="mb-8 pb-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Professional Summary</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Driven IT Support & Production Engineer with 5+ years of experience across banking, finance, and IT operations. Proven expertise in Salesforce CRM, application support (L2 & L3), SQL, SOQL, and Azure. Strong analytical and troubleshooting skills with a commitment to continuous process improvement and stakeholder satisfaction. Skilled in incident management, root cause analysis, and post-production support.
+                    </p>
+                </section>
 
-        <section class="section">
-            [cite_start]<h2>Certifications</h2> [cite: 20]
-            <ul>
-                [cite_start]<li>Microsoft Azure Fundamentals (AZ-900) - Certified [cite: 21]</li>
-                [cite_start]<li>Windows Server & Windows 10 - Udemy [cite: 22]</li>
-                [cite_start]<li>SQL - OracleDB (Udemy) [cite: 23]</li>
-                [cite_start]<li>Python - NESTI Institute, Thane [cite: 24]</li>
-                [cite_start]<li>CCNA Crash Course - Pillai College of Engineering [cite: 25]</li>
-            </ul>
-        </section>
+                <!-- Technical Skills -->
+                <section class="mb-8 pb-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Technical Skills</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">CRM Tools:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Salesforce.com</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Veeva CRM</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Languages:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">SQL</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">SOQL</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">APEX</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Javascript</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Python</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Cloud:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Microsoft Azure (VMs, AD, Load Balancer, Disk, Storage)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Operating Systems:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Windows</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Linux</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">macOS</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Infrastructure:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">DHCP</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">DNS</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">SMTP</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">POP3</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">FTP</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">VPN</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Tools:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Salesforce Inspector</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Workbench</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">MASDB</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">APP Dynamics</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Dynatrace Monitoring System</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">JIRA</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Ticketing Systems:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">ManageEngine</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Others:</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">O365</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">VMware ESXi</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">System Virtualization</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Active Directory</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-        <section class="section">
-            [cite_start]<h2>Professional Experience</h2> [cite: 26]
+                <!-- Certifications -->
+                <section class="mb-8 pb-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Certifications</h2>
+                    <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                        <li>Microsoft Azure Fundamentals (AZ-900) - Certified</li>
+                        <li>Salesforce Administrator - Certified</li>
+                        <li>JavaScript (Udemy)</li>
+                        <li>Windows Server & Windows 10 - Udemy</li>
+                        <li>SQL - OracleDB (Udemy)</li>
+                        <li>Python - NESTI Institute, Thane</li>
+                        <li>CCNA Crash Course - Pillai College of Engineering</li>
+                    </ul>
+                </section>
 
-            <h3>L&T Finance Pvt. [cite_start]Ltd., Mumbai (India)</h3> [cite: 27]
-            <p class="job-title">Senior Production Support Engineer (L2 & L3) | [cite_start]Apr 2023 - Present</p> [cite: 28]
-            <ul>
-                [cite_start]<li>Ensured 95%+ uptime for mission-critical applications. [cite: 29]</li>
-                [cite_start]<li>Managed issue resolution via Salesforce tools, SQL queries, and Service Desk tickets. [cite: 30]</li>
-                [cite_start]<li>Handled root cause analysis, escalation management, and data fixes. [cite: 31]</li>
-                [cite_start]<li>Led stakeholder meetings and post-production reviews. [cite: 32]</li>
-                [cite_start]<li>Maintained knowledge base and SOPs for support teams. [cite: 33]</li>
-            </ul>
+                <!-- Professional Experience -->
+                <section class="mb-8 pb-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Professional Experience</h2>
 
-            [cite_start]<h3>NeoSoft Technologies, Mumbai (India)</h3> [cite: 34]
-            <p class="job-title">Senior Production Support Engineer - Salesforce | [cite_start]Nov 2021 - Mar 2023</p> [cite: 35]
-            <ul>
-                [cite_start]<li>Provided L2 application support for Salesforce and internal CRM platforms. [cite: 36]</li>
-                [cite_start]<li>Conducted weekly BA/Dev meetings to track open issues and solutions. [cite: 37]</li>
-                [cite_start]<li>Led incident calls, generated RCA, and developed documentation. [cite: 38]</li>
-            </ul>
+                    <!-- Experience Item 1 -->
+                    <div class="mb-6 experience-item">
+                        <h3 class="text-xl font-semibold text-gray-900 cursor-pointer flex justify-between items-center toggle-button">
+                            L&T Finance Pvt. Ltd., Mumbai (India)
+                            <span class="text-blue-500 text-sm ml-2">[Click to Toggle Details]</span>
+                        </h3>
+                        <p class="text-gray-600 italic mb-2">Senior Production Support Engineer (L2 & L3) | Apr 2023 - Present</p>
+                        <ul class="list-disc ml-5 space-y-1 text-gray-700 experience-details hidden">
+                            <li>Ensured 95%+ uptime for mission-critical applications.</li>
+                            <li>Managed issue resolution via Salesforce tools, SQL queries, and Service Desk tickets.</li>
+                            <li>Handled root cause analysis, escalation management, and data fixes.</li>
+                            <li>Led stakeholder meetings and post-production reviews.</li>
+                            <li>Maintained knowledge base and SOPs for support teams.</li>
+                        </ul>
+                    </div>
 
-            <h3>InfiniMinds Pvt. [cite_start]Ltd. (Wipro - HDFC Project)</h3> [cite: 39]
-            <p class="job-title">Technical Support Engineer L1 - Application Support | [cite_start]Jan 2021 - Sep 2021</p> [cite: 40]
-            <ul>
-                [cite_start]<li>Supported production issues and business user queries. [cite: 41]</li>
-                [cite_start]<li>Tracked and resolved application and data flow issues. [cite: 42]</li>
-            </ul>
+                    <!-- Experience Item 2 -->
+                    <div class="mb-6 experience-item">
+                        <h3 class="text-xl font-semibold text-gray-900 cursor-pointer flex justify-between items-center toggle-button">
+                            NeoSoft Technologies, Mumbai (India)
+                            <span class="text-blue-500 text-sm ml-2">[Click to Toggle Details]</span>
+                        </h3>
+                        <p class="text-gray-600 italic mb-2">Senior Production Support Engineer - Salesforce | Nov 2021 - Mar 2023</p>
+                        <ul class="list-disc ml-5 space-y-1 text-gray-700 experience-details hidden">
+                            <li>Provided L2 application support for Salesforce and internal CRM platforms.</li>
+                            <li>Conducted weekly BA/Dev meetings to track open issues and solutions.</li>
+                            <li>Led incident calls, generated RCA, and developed documentation.</li>
+                        </ul>
+                    </div>
 
-            <h3>VDA Info Solution Pvt. [cite_start]Ltd. (Cognizant - AstraZeneca)</h3> [cite: 43]
-            <p class="job-title">FMS Engineer - Salesforce & Veeva Systems | [cite_start]Jul 2019 - May 2020</p> [cite: 44]
-            <ul>
-                [cite_start]<li>Managed CRM user roles, dashboards, workflows. [cite: 45]</li>
-                [cite_start]<li>Provided CRM training and troubleshooting support. [cite: 46]</li>
-            </ul>
-        </section>
+                    <!-- Experience Item 3 -->
+                    <div class="mb-6 experience-item">
+                        <h3 class="text-xl font-semibold text-gray-900 cursor-pointer flex justify-between items-center toggle-button">
+                            InfiniMinds Pvt. Ltd. (Wipro - HDFC Project)
+                            <span class="text-blue-500 text-sm ml-2">[Click to Toggle Details]</span>
+                        </h3>
+                        <p class="text-gray-600 italic mb-2">Technical Support Engineer L1 - Application Support | Jan 2021 - Sep 2021</p>
+                        <ul class="list-disc ml-5 space-y-1 text-gray-700 experience-details hidden">
+                            <li>Supported production issues and business user queries.</li>
+                            <li>Tracked and resolved application and data flow issues.</li>
+                        </ul>
+                    </div>
 
-        <section class="section">
-            [cite_start]<h2>Education</h2> [cite: 47]
-            <ul>
-                [cite_start]<li>Bachelor of Engineering - IT, Pillai College of Engineering, Mumbai University (2019 - 53.86%) [cite: 48, 49]</li>
-                [cite_start]<li>Diploma in Information Technology, MSBTE (2016-64.53%) [cite: 50]</li>
-                [cite_start]<li>SSC - Maharashtra Board (2011-76%) [cite: 51]</li>
-            </ul>
-        </section>
+                    <!-- Experience Item 4 -->
+                    <div class="mb-6 experience-item">
+                        <h3 class="text-xl font-semibold text-gray-900 cursor-pointer flex justify-between items-center toggle-button">
+                            VDA Info Solution Pvt. Ltd. (Cognizant - AstraZeneca)
+                            <span class="text-blue-500 text-sm ml-2">[Click to Toggle Details]</span>
+                        </h3>
+                        <p class="text-gray-600 italic mb-2">FMS Engineer - Salesforce & Veeva Systems | Jul 2019 - May 2020</p>
+                        <ul class="list-disc ml-5 space-y-1 text-gray-700 experience-details hidden">
+                            <li>Managed CRM user roles, dashboards, workflows.</li>
+                            <li>Provided CRM training and troubleshooting support.</li>
+                        </ul>
+                    </div>
 
-        <section class="section">
-            [cite_start]<h2>Hobbies & Interests</h2> [cite: 52]
-            <ul>
-                [cite_start]<li>Trekking, swimming, biking [cite: 53]</li>
-                [cite_start]<li>Chess, drawing [cite: 54]</li>
-                [cite_start]<li>Exploring new technologies and cultures [cite: 55]</li>
-            </ul>
-        </section>
+                </section>
+
+                <!-- Education -->
+                <section class="mb-8 pb-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Education</h2>
+                    <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                        <li>Bachelor of Engineering - IT, Pillai College of Engineering, Mumbai University (2019 - 53.86%)</li>
+                        <li>Diploma in Information Technology, MSBTE (2016-64.53%)</li>
+                        <li>SSC - Maharashtra Board (2011-76%)</li>
+                    </ul>
+                </section>
+
+                <!-- Hobbies & Interests -->
+                <section class="pb-4">
+                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Hobbies & Interests</h2>
+                    <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                        <li>Trekking, swimming, biking</li>
+                        <li>Chess, drawing</li>
+                        <li>Exploring new technologies and cultures</li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- Footer Section (Optional) -->
+            <footer class="bg-gray-700 text-white text-center p-4 rounded-b-2xl text-sm">
+                <p>&copy; 2025 Vaibhav Shyam Rane. All rights reserved.</p>
+            </footer>
+        </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all elements with the class 'toggle-button'
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Find the next sibling element with the class 'experience-details'
+                    const details = this.nextElementSibling.nextElementSibling; // Skip the <p> tag
+
+                    // Toggle the 'hidden' class to show/hide the details
+                    if (details) { // Ensure details element exists
+                        details.classList.toggle('hidden');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
